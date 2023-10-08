@@ -5,7 +5,7 @@
   define('SENHA', '');
   define('DB', 'login; charset=utf8') ;
   
-  // FUNCAO DE CONEXAO
+
   function conecta(){
   
       $dns= "mysql:host=" . HOST . ";dbname=" . DB;
