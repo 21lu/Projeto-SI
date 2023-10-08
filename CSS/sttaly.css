@@ -1,0 +1,56 @@
+/*loguin*/
+#tela{
+    font-family: 'Roboto', sans-serif;
+     background-color: rgba(5, 71, 5, 0.746);
+     color: #fff;
+}
+.entar a{
+    text-decoration: none;
+    color: aquamarine;
+}
+#login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.name input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1c2e1e;
+}
+.email input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1c2e1e;
+    margin-top: 15px;
+}
+.senha input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1c2e1e;
+    margin-top: 15px;
+}
+.btn input{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(26, 168, 121);
+    color: black;
+}
+#caixa{
+    margin-top: 65px;
+}
+/*painel*/
+
