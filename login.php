@@ -13,6 +13,9 @@ try {
     $logar->execute();
 
     if ($logar->rowCount() == 1) {
+       
+        session_start();
+        $_SESSION['nome_usuario'] = $email_;
         header("Location: painel.php");
         exit();
     } else {
