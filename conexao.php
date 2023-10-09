@@ -3,7 +3,7 @@
   define('HOST', 'localhost');
   define('USUARIO', 'root');
   define('SENHA', '');
-  define('DB', 'login; charset=utf8') ;
+  define('DB', 'gestao_escolar; charset=utf8') ;
   
 
   function conecta(){

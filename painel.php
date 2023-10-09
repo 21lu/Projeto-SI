@@ -1,11 +1,4 @@
-<?php
-    session_start();
 
-    require_once('verificar.php');
-
-    verification('index.php');
-    
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

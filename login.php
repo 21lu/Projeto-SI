@@ -1,27 +1,24 @@
 <?php
+
 require_once('conexao.php');
 $conexao = conecta();
 
-    $email = filter_var($_POST['e_mail'], FILTER_VALIDATE_EMAIL);
-    $senha = filter_var($_POST['senha_']);
+$email_ = filter_var($_POST['email_us'], FILTER_VALIDATE_EMAIL);
+$senha_ = filter_var($_POST['senha_us']);
 
-    try{
-        $logar = $conexao->prepare("SELECT * FROM usuarios WHERE email= ? AND senha= ?");
-    $logar->bindValue(1,$email,PDO::PARAM_STR);
-    $logar->bindValue(2,md5(strrev($senha)) ,PDO::PARAM_STR);
+try {
+    $logar = $conexao->prepare("SELECT * FROM login WHERE email = ? AND senha = ?");
+    $logar->bindValue(1, $email_, PDO::PARAM_STR);
+    $logar->bindValue(2, $senha_, PDO::PARAM_STR);
     $logar->execute();
 
-    if ($logar->rowCount() == 1):
+    if ($logar->rowCount() == 1) {
         header("Location: painel.php");
+        exit();
+    } else {
+        echo "Credenciais inválidas"; 
+    }
+} catch (PDOException $e) {
+    echo $e->getMessage();
+}
 
-    else:
-      return FALSE;
-    endif;
-    
-
-       }catch(PDOException $e){
-       echo $e->getMessage();
-   }
-   var_dump($logar);
-
-?>

@@ -1,11 +1,4 @@
-<?php
-    if(!isset($_SESSION)){
-        session_start();
 
-    }
-    
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -22,10 +15,10 @@
                 <h1>LOGIN</h1>
                 <form action="login.php" method="post">
                 <div class="email">
-                    <input type="email" name="e_mail" placeholder="E-mail">
+                    <input type="email" name="email_us" placeholder="E-mail">
                 </div>
                 <div class="senha">
-                    <input type="password" name="senha_" placeholder="Senha">
+                    <input type="password" name="senha_us" placeholder="Senha">
                 </div>
                 <div class="entrar">
                     <p>Ainda não tem uma conta? <a href="cadastro.php">Cadastrar</a></p>
