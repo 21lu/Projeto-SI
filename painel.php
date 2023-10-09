@@ -1,11 +1,11 @@
 <?php
-session_start(); // Certifique-se de iniciar a sessão em todas as páginas onde deseja acessar as informações da sessão
+session_start(); 
 
 if (isset($_SESSION['nome_usuario'])) {
     $nomeDoUsuario = $_SESSION['nome_usuario'];
     echo "Bem-vindo, $nomeDoUsuario!";
 } else {
-    echo "Usuário não logado"; // Ou redirecione para a página de login
+    echo "Usuário não logado"; 
 }
 ?>
 
